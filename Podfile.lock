@@ -1,0 +1,18 @@
+PODS:
+  - ReactNative-Binary (0.69.4):
+    - ReactNative-Binary/main (= 0.69.4)
+  - ReactNative-Binary/main (0.69.4)
+
+DEPENDENCIES:
+  - ReactNative-Binary (from `../ReactNative-Binary`)
+
+EXTERNAL SOURCES:
+  ReactNative-Binary:
+    :path: "../ReactNative-Binary"
+
+SPEC CHECKSUMS:
+  ReactNative-Binary: 7033ba8604ecb296a064e7fec8589a45d403bdf2
+
+PODFILE CHECKSUM: 0a8804eafa6eade8535730195d4d798d3553cb7f
+
+COCOAPODS: 1.11.3

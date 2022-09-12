@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E26279C328CC8AE8005A3E85 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = E26279C228CC8AE8005A3E85 /* main.jsbundle */; };
+		E27C231D28CDC04A00EB8AAF /* ios_rn_prebuilt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27C231328CDBE7800EB8AAF /* ios_rn_prebuilt.framework */; };
+		E27C231E28CDC04A00EB8AAF /* ios_rn_prebuilt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E27C231328CDBE7800EB8AAF /* ios_rn_prebuilt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E27C245528CECA8200EB8AAF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C245428CECA8200EB8AAF /* SecondViewController.swift */; };
 		E2EC04F528CB7677007217C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC04F428CB7677007217C7 /* AppDelegate.swift */; };
 		E2EC04F728CB7677007217C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC04F628CB7677007217C7 /* SceneDelegate.swift */; };
 		E2EC04F928CB7677007217C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC04F828CB7677007217C7 /* ViewController.swift */; };
@@ -15,7 +19,28 @@
 		E2EC050128CB7678007217C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EC04FF28CB7678007217C7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E27C22C228CDB60300EB8AAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E27C231E28CDC04A00EB8AAF /* ios_rn_prebuilt.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		409AB01C5C5EDA1D3039FC1C /* Pods-TestStoryboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestStoryboard.debug.xcconfig"; path = "Target Support Files/Pods-TestStoryboard/Pods-TestStoryboard.debug.xcconfig"; sourceTree = "<group>"; };
+		577EAA72831D7F57685BC783 /* Pods-TestStoryboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestStoryboard.release.xcconfig"; path = "Target Support Files/Pods-TestStoryboard/Pods-TestStoryboard.release.xcconfig"; sourceTree = "<group>"; };
+		E262785428CC39CA005A3E85 /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
+		E26279C228CC8AE8005A3E85 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = ../../PocReactNative/ios/main.jsbundle; sourceTree = "<group>"; };
+		E27C20BD28CCA53200EB8AAF /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E27C231328CDBE7800EB8AAF /* ios_rn_prebuilt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ios_rn_prebuilt.framework; path = "../../../Library/Developer/Xcode/DerivedData/ios-rn-prebuilt-blddnuxewrqefggppmtaxhotpxwa/Build/Products/Debug-iphonesimulator/ios_rn_prebuilt.framework"; sourceTree = "<group>"; };
+		E27C245428CECA8200EB8AAF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E2EC04F128CB7677007217C7 /* TestStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EC04F428CB7677007217C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2EC04F628CB7677007217C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +56,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27C231D28CDC04A00EB8AAF /* ios_rn_prebuilt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C08643507C1560BFFFED861A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				409AB01C5C5EDA1D3039FC1C /* Pods-TestStoryboard.debug.xcconfig */,
+				577EAA72831D7F57685BC783 /* Pods-TestStoryboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2EC04E828CB7677007217C7 = {
 			isa = PBXGroup;
 			children = (
 				E2EC04F328CB7677007217C7 /* TestStoryboard */,
 				E2EC04F228CB7677007217C7 /* Products */,
+				C08643507C1560BFFFED861A /* Pods */,
+				E9E4D918B9845C4D7E73DAB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +93,27 @@
 		E2EC04F328CB7677007217C7 /* TestStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				E27C231328CDBE7800EB8AAF /* ios_rn_prebuilt.framework */,
+				E26279C228CC8AE8005A3E85 /* main.jsbundle */,
 				E2EC04F428CB7677007217C7 /* AppDelegate.swift */,
 				E2EC04F628CB7677007217C7 /* SceneDelegate.swift */,
 				E2EC04F828CB7677007217C7 /* ViewController.swift */,
+				E27C245428CECA8200EB8AAF /* SecondViewController.swift */,
 				E2EC04FA28CB7677007217C7 /* Main.storyboard */,
 				E2EC04FD28CB7678007217C7 /* Assets.xcassets */,
 				E2EC04FF28CB7678007217C7 /* LaunchScreen.storyboard */,
 				E2EC050228CB7678007217C7 /* Info.plist */,
 			);
 			path = TestStoryboard;
+			sourceTree = "<group>";
+		};
+		E9E4D918B9845C4D7E73DAB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E27C20BD28CCA53200EB8AAF /* JavaScriptCore.framework */,
+				E262785428CC39CA005A3E85 /* libswiftWebKit.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2EC050528CB7678007217C7 /* Build configuration list for PBXNativeTarget "TestStoryboard" */;
 			buildPhases = (
+				DCB3F38E87BA3FE30B55A520 /* [CP] Check Pods Manifest.lock */,
 				E2EC04ED28CB7677007217C7 /* Sources */,
 				E2EC04EE28CB7677007217C7 /* Frameworks */,
 				E2EC04EF28CB7677007217C7 /* Resources */,
+				E27C22C228CDB60300EB8AAF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +178,44 @@
 			files = (
 				E2EC050128CB7678007217C7 /* LaunchScreen.storyboard in Resources */,
 				E2EC04FE28CB7678007217C7 /* Assets.xcassets in Resources */,
+				E26279C328CC8AE8005A3E85 /* main.jsbundle in Resources */,
 				E2EC04FC28CB7677007217C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DCB3F38E87BA3FE30B55A520 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestStoryboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2EC04ED28CB7677007217C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27C245528CECA8200EB8AAF /* SecondViewController.swift in Sources */,
 				E2EC04F928CB7677007217C7 /* ViewController.swift in Sources */,
 				E2EC04F528CB7677007217C7 /* AppDelegate.swift in Sources */,
 				E2EC04F728CB7677007217C7 /* SceneDelegate.swift in Sources */,
@@ -202,6 +280,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -217,6 +296,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -262,6 +346,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -271,6 +356,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,57 +372,91 @@
 		};
 		E2EC050628CB7678007217C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409AB01C5C5EDA1D3039FC1C /* Pods-TestStoryboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PTJKBSHMU8;
+				DEVELOPMENT_TEAM = DMUL29V63R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestStoryboard/iphonesimulator_Debug",
+					"$(PROJECT_DIR)/TestStoryboard",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestStoryboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Wing Bank (EMBED)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sochetra-nov.TestStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winginterlts.wingmall.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Wingmall Staging";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E2EC050728CB7678007217C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577EAA72831D7F57685BC783 /* Pods-TestStoryboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PTJKBSHMU8;
+				DEVELOPMENT_TEAM = DMUL29V63R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestStoryboard/iphonesimulator_Debug",
+					"$(PROJECT_DIR)/TestStoryboard",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestStoryboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Wing Bank (EMBED)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sochetra-nov.TestStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winginterlts.wingmall.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Wingmall Staging";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
